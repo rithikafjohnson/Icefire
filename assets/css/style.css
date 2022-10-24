@@ -1,0 +1,335 @@
+/*-- Reset --*/
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+/*============= NAVIGATION =============*/
+.navbar-brand img{
+  height: 4.0rem ;
+}
+.navbar{
+  background: linear-gradient(to right, #a6f393, #0995f3);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .4);
+}
+.nav-item{
+  padding: 0.7rem;
+}
+.nav-link{
+  color:black!important;
+}
+.nav-link.active,
+.nav-link:hover{
+  color: rgb(233, 0, 0)!important;
+}
+
+
+/*============= CAROUSEL =============*/
+.carousel-inner{
+  max-height: 40rem!important;
+}
+
+.bg-dark{
+  background-color: rgba(0, 0, 0, .7)!important ;
+  border-radius:1.5rem;
+  padding:1rem;
+}
+
+.bg-white{
+  background-color: rgba(255, 255, 255, 0.70)!important ;
+  border-radius:1.5rem;
+  padding:1rem;
+}
+
+/*---Change Carousel Transition Speed --*/
+ .carousel-item-next,
+ .carousel-item-prev,
+ .carousel-item.active{
+   transition: transform 1.5s ease;
+ }
+ .carousel-indicators li{
+   width: 40px;
+   height:6px;
+   margin: 4px;
+ }
+
+/*-- Carousel Content --*/
+.carousel-caption{
+   position: absolute;
+   top: 47%;
+   transform: translateY(-50%);
+}
+
+.carousel-caption h3{
+  font-size:2.3rem;
+  font-weight: 300;
+}
+
+p.lead{
+  font-size: 1.6rem;
+}
+/*============= SOCIAL MEDIA STICKY BAR =============*/
+
+.jumbotron {
+  background: linear-gradient(to right, #ffffff, #9ba0e4);
+  padding: 1rem 0 .5rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .6);
+}
+ul.social{
+  list-style-type: none;
+  display:flex;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+ul.social li{
+  margin: 0 auto;
+}
+.jumbotron .svg-inline--fa{
+  font-size:2rem;
+  margin:0 1rem;
+}
+.jumbotron .svg-inline--fa:hover{
+  color:gray!important;
+}
+
+/*============= COLUMN CONTENT =============*/
+.column {
+  flex: 50%;
+}
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+  
+  
+}
+.fixed {
+  background-image: url('../img/happiness.jpg');
+  position: fixed;
+}
+
+.fixed-background1 {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+  
+  
+}
+.fixed1 {
+  background-image: url('../img/fullPage.jpg');
+  position: fixed;
+}
+
+.fixed-background2 {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+  
+  
+}
+.fixed2 {
+  background-image: url('../img/steam.jpg');
+  position: fixed;
+}
+
+
+/*============= FOOTER =============*/
+
+footer{
+  background: linear-gradient(to left, #353535, #353535);
+  
+  padding:1rem 2rem 3rem;
+}
+footer img{
+  height: 8rem;
+  margin: 1.5rem auto;
+}
+
+footer a,
+.socket a{
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+footer a:hover,
+.socket a:hover{
+  color: #eeebeb;
+  text-decoration: none;
+}
+
+/*============= SOCKET =============*/
+
+.socket{
+  border-top: 0.2rem solid rgb(255, 255, 255);
+  background-color: #242424;
+  }
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  display: flex;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+.fixed-background1 {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap1 {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed1 {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+.fixed-background2 {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap2 {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed2 {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+.button {
+  transition-duration: 0.4s;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: 2px solid #4CAF50; /* Green */
+  border-radius: 8px;
+
+}
