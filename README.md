@@ -1,6 +1,6 @@
 # Icefire
  
-This website was built using Django framework to benefit coding neophytes. It converts psuedo code into C++ thereby rendering it easy to grasp concepts. It also has a set of 3 games where the user can test their understanding.
+This website was built using Django framework to benefit coding neophytes. It converts pseudocode into C++ thereby rendering it easy to grasp concepts. It also has a set of 3 games where the user can test their understanding.
 
 
 ## Videos
